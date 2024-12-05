@@ -1,0 +1,21 @@
+@media screen and(max-width:900px) and (min-width:775px){
+    .counter-wrapper{
+        padding:1em 2em;
+    }
+}
+@media screen and (max-width:619px) {
+    .mssg-text h3{
+        font-size: 25px;
+    }
+    .counter-wrapper{
+        padding: 0.5em;
+    }
+}
+@media screen and(min-width:485px){
+    .counter-wrapper{
+        grid-template-columns:1fr;
+        padding: none;
+    }
+   
+   
+}

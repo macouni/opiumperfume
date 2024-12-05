@@ -1,0 +1,88 @@
+:root{
+    --bgdark:#080808;
+}
+body{background-color: var(--bgdark);}
+*{font-family: fontmine;color:white;}
+@font-face {
+    font-family:fontmine;
+    src: url(../font/TitilliumWeb-Regular.ttf);
+}
+ul{list-style-type: none;}
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    width:155px;
+}
+a{color:white;}
+.bgColorDark{
+    background-color: var(--bgdark);
+}
+#wrapper{
+    width:100%;
+}
+img{width:100%;}
+.counter-wrapper{
+    padding:4em 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+.counter{
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    animation: fadeUp 600ms ease-in-out forwards;
+}
+.counter h3{
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+@keyframes fadeUp {
+    0%{
+        opacity:0;
+        transform: translateY(150px);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+.hovereffekat{
+    transform: scale(1.02);
+    transition: 500ms all;
+    box-shadow: 0px 0px 10px #343434;
+    }
+ .bgP{
+        background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../img/banerParfem.webp") ;
+    height:300px;
+ }
+ .mssgBg,.bgP{
+    background-size: cover; 
+    position:relative;
+    background-attachment: fixed;
+    color:white;
+    background-position: center;
+}
+.mssgBg{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../img/IMG_4894_1.webp") ;
+     height:400px;
+}
+.mssg-text{
+    width:90%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}.mssg-text h3{
+    font-size: 40px;
+}
+.greska{
+    border:1px solid red;
+    background-color: rgb(226, 133, 150);
+}
+.ok{
+    border:1px solid green;
+}
